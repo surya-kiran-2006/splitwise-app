@@ -1,0 +1,74 @@
+.balance-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.balance-info {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.balance-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 20px;
+}
+
+.balance-row-me {
+  border-color: #fca5a5;
+  background: var(--danger-light);
+}
+
+.balance-from,
+.balance-to {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 120px;
+}
+
+.balance-to { flex-direction: row-reverse; }
+
+.balance-name {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.balance-person {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.balance-tag {
+  font-size: 11px;
+  color: var(--brand);
+  font-weight: 500;
+}
+
+.balance-middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+}
+
+.balance-arrow { display: flex; align-items: center; }
+
+.balance-amount {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--font-mono);
+}
+
+@media (max-width: 500px) {
+  .balance-row { padding: 14px; gap: 8px; }
+  .balance-from, .balance-to { min-width: 80px; }
+  .balance-person { font-size: 13px; }
+}

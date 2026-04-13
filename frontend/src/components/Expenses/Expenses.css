@@ -1,0 +1,125 @@
+.expense-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.expense-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  transition: box-shadow 0.15s;
+}
+
+.expense-row:hover { box-shadow: var(--shadow); }
+
+.expense-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--brand-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.expense-body { flex: 1; min-width: 0; }
+
+.expense-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.expense-desc {
+  font-weight: 600;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.expense-amount {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  flex-shrink: 0;
+}
+
+.expense-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
+  flex-wrap: wrap;
+}
+
+.expense-meta strong { color: var(--text-secondary); font-weight: 600; }
+.dot { color: var(--border); }
+.expense-date { flex-shrink: 0; }
+
+.expense-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.expense-net {
+  font-size: 13px;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+.expense-net.positive {
+  background: var(--brand-light);
+  color: var(--brand-dark);
+}
+
+.expense-net.negative {
+  background: var(--danger-light);
+  color: var(--danger);
+}
+
+.expense-delete { opacity: 0; transition: opacity 0.15s; }
+.expense-row:hover .expense-delete { opacity: 1; }
+
+/* Split member chips */
+.split-members {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.split-member-chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px 5px 6px;
+  border: 1.5px solid var(--border);
+  border-radius: 99px;
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--text-secondary);
+  transition: all 0.15s;
+  user-select: none;
+}
+
+.split-member-chip:hover {
+  border-color: var(--brand);
+  color: var(--brand);
+}
+
+.split-member-chip.selected {
+  border-color: var(--brand);
+  background: var(--brand-light);
+  color: var(--brand-dark);
+}
