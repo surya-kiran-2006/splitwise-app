@@ -25,7 +25,7 @@ export default function Navbar() {
             <circle cx="13" cy="13" r="13" fill="#1a7a5e" />
             <path d="M7 13h12M13 7v12" stroke="white" strokeWidth="2.2" strokeLinecap="round" />
           </svg>
-          <span>SplitEase</span>
+          <span>SplitX</span>
         </Link>
 
         <div className="navbar-links">

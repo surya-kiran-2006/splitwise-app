@@ -38,7 +38,7 @@ export default function RegisterPage() {
             <circle cx="20" cy="20" r="20" fill="#1a7a5e" />
             <path d="M10 20h20M20 10v20" stroke="white" strokeWidth="3" strokeLinecap="round" />
           </svg>
-          <h1>SplitEase</h1>
+          <h1>SplitX</h1>
           <p>Split expenses with friends, simply.</p>
         </div>
 

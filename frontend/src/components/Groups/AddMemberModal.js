@@ -24,7 +24,7 @@ export default function AddMemberModal({ group, onClose, onAdded }) {
   return (
     <Modal title="Add a member" onClose={onClose}>
       <p style={{ fontSize: 14, color: 'var(--text-secondary)', marginBottom: '1rem' }}>
-        Enter the email address of an existing SplitEase user.
+        Enter the email address of an existing SplitX user.
       </p>
       {error && <div className="error-msg" style={{ marginBottom: '1rem' }}>{error}</div>}
       <form onSubmit={handleSubmit}>
